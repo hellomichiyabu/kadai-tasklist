@@ -4,8 +4,7 @@
 
     <h1>id = {{ $task->id }} のメッセージ詳細ページ</h1>
     
-    <p>{{ <1task></1task>->content }}</p>
-    
+    <p>{{ $task->content }}</p>
     
     {!! link_to_route('tasks.edit', 'このメッセージ編集', ['id' => $task->id]) !!}
 
