@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Tasks extends Migration
+class CreateTasksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,8 @@ class Tasks extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('content');    // content カラム追加
+            $table->string('content');   // content カラム追加
+            $table->string('status',10);    // status カラム追加
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class Tasks extends Migration
      */
     public function down()
     {
-        Schema::drop('tasks');
+        //Schema::drop('tasks');
     }
 }
