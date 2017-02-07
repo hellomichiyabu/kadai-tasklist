@@ -12,8 +12,9 @@
         {!! Form::label('content', 'タイトル:') !!}
         {!! Form::text('content', null, ['class' => 'form-control']) !!}
 
+
         {!! Form::label('status', 'ステータス:') !!}
-        {!! Form::text('status'), null, ['class' => 'form-control']) !!}
+        {!! Form::text('status', null, ['class' => 'form-control']) !!}
 
         {!! Form::submit('更新', ['class' => 'btn btn-default']) !!}
 
